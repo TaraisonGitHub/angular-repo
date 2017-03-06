@@ -1,0 +1,43 @@
+<h2 style="border-color:black;border-style: solid; border-width: 3px; padding: 30px">AngularJS-To-Do</h1>
+
+<div style="padding: 30px" id="container">
+<form>
+	Name: <input type="text" ng-model="DashboardVM.heroName">
+	<br>
+	<button class="btn btn-default" type="submit">List</button>
+	<button class="btn btn-default" type="submit">Create</button>
+	<button class="btn btn-default" type="submit">Dashboard</button>
+	<hr>
+	<br>
+	<h3>Overdue</h3>
+	<hr>
+	<div class="checkbox">
+    	<label>
+    		<!-- ng-model is the part that binds through Angular and is dynamic -->
+     		<input type="checkbox" ng-model="DashboardVM.itemOverdue">
+    	</label>
+    	<br>
+    	<label>
+     		<input type="checkbox" ng-model="DashboardVM"> item2
+    	</label>
+    <br>
+    <h3>Due Today</h3>
+    <hr>
+    <div class="checkbox">
+    	<label>
+     		<input type="checkbox" ng-model="DashboardVM"> item3
+    	</label>
+    	<br>
+    	<label>
+     		<input type="checkbox" ng-model="DashboardVM"> item4
+    	</label>
+    <br>
+    <h3>Due Later</h3>
+    <hr>
+	<div class="checkbox">
+    	<label>
+     		<input type="checkbox" ng-model="DashboardVM"> item5
+    	</label>
+    </div>
+</form>
+</div>
