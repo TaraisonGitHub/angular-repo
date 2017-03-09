@@ -1,11 +1,11 @@
 //the controller is the "brains" of the route that holds all the logic
 
 angular
-	.module('createANote.dashboard')
+	.module('createANote.home')
 	//the first parameter declares a name for the controller, the second paramter uses that name
-	.controller('DashboardCtrl', DashboardCtrl);
+	.controller('HomeCtrl', HomeCtrl);
 
-	function DashboardCtrl($scope, $http) {
+	function HomeCtrl($scope, $http) {
 		var vm = this;
 
 	}

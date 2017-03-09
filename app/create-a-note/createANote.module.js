@@ -2,7 +2,8 @@ angular
 	// The two parameters in the function module are 1) the name of the app, and 2) the array of dependencies
 	.module('createANote',[
 		'ui.router',
-		'createANote.dashboard'
+		'createANote.dashboard',
+		'createANote.home'
 	])
 	.config(createANoteConfig);
 	function createANoteConfig($urlRouterProvider) {

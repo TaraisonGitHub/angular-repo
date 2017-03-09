@@ -4,9 +4,9 @@
 <form>
 	Name: <input type="text" ng-model="DashboardVM.heroName">
 	<br>
-	<button class="btn btn-default" type="submit">List</button>
-	<button class="btn btn-default" type="submit">Create</button>
-	<button class="btn btn-default" type="submit">Dashboard</button>
+	<button class="btn btn-default" type="submit" value="one">List</button>
+	<button class="btn btn-default" type="submit" value="two">Create</button>
+	<button class="btn btn-default" type="submit" valume="three">Dashboard</button>
 	<hr>
 	<br>
 	<h3>Overdue</h3>
@@ -14,29 +14,27 @@
 	<div class="checkbox">
     	<label>
     		<!-- ng-model is the part that binds through Angular and is dynamic -->
-     		<input type="checkbox" ng-model="DashboardVM.itemOverdue">
+     		<input type="checkbox" ng-model="DashboardVM.itemOverdue" value="four"> Clean laundry
     	</label>
     	<br>
     	<label>
-     		<input type="checkbox" ng-model="DashboardVM"> item2
+     		<input type="checkbox" value="win" ng-model="DashboardVM.itemOverdueTwo" value="five"> Wash dishes
     	</label>
     <br>
     <h3>Due Today</h3>
     <hr>
     <div class="checkbox">
     	<label>
-     		<input type="checkbox" ng-model="DashboardVM"> item3
-    	</label>
+     		<input type="checkbox" ng-model="DashboardVM.itemToday"> Change oil
     	<br>
     	<label>
-     		<input type="checkbox" ng-model="DashboardVM"> item4
+     		<input type="checkbox" ng-model="DashboardVM.itemToday2"> Doctor appointment
     	</label>
-    <br>
     <h3>Due Later</h3>
     <hr>
 	<div class="checkbox">
     	<label>
-     		<input type="checkbox" ng-model="DashboardVM"> item5
+     		<input type="checkbox" ng-model="DashboardVM.itemLater"> Call Mom
     	</label>
     </div>
 </form>
